@@ -1,6 +1,18 @@
 # LimitedAction
 
-TODO: Write a gem description
+```
+$ cat test.rb
+requrie 'limited_action'
+
+LimitedAction.condition! { ENV['LIMITED_ACTION'] == 'allow' }
+
+limited_action! { puts 'limited action' }
+
+$ LIMITED_ACTION=hoge ruby test.rb
+$ LIMITED_ACTION=allow ruby test.rb
+limited action
+```
+
 
 ## Installation
 
@@ -18,7 +30,24 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### require
+
+```ruby
+requrie 'limited_action'
+```
+
+### Set Condition
+
+```ruby
+LimitedAction.condition! { ENV['LIMITED_ACTION'] == 'allow' }
+```
+
+### write action
+
+```ruby
+limited_action! { puts 'limited action' }
+```
+
 
 ## Contributing
 
