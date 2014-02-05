@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = LimitedAction::VERSION
   spec.authors       = ["Mitsutaka Mimura"]
   spec.email         = ["takkanm@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.description   = %q{define action only run limited condition}
+  spec.summary       = %q{}
+  spec.homepage      = "https://github.com/takkanm/limited_action"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
